@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Style.css"
+import "./Style.css";
 import Bcom1sub from './Bcom1sub';
 
 const LoginForm = () => {
@@ -7,12 +7,18 @@ const LoginForm = () => {
     const [password, setPassword] = useState('');
     const [loggedIn, setLoggedIn] = useState(false);
 
-    const handleLogin = () => {
-        // Hardcoded credentials (replace these with your actual authentication logic)
-        const validUsername = 'user';
-        const validPassword = 'password';
+    // Array to store user credentials
+    const users = [
+        { username: 'user', password: 'password' },
+        { username: 'abhishek', password: 'abhi@6268' },
+        // Add more users as needed
+    ];
 
-        if (username === validUsername && password === validPassword) {
+    const handleLogin = () => {
+        // Check if the entered credentials match any user
+        const validUser = users.find(user => user.username === username && user.password === password);
+
+        if (validUser) {
             setLoggedIn(true);
         } else {
             alert('Invalid username or password');
@@ -44,6 +50,7 @@ const LoginForm = () => {
             ) : (
                 <div>
                     <Bcom1sub />
+                    <button className='btn btn-primary mb-2' onClick={handleLogout}>Logout</button>
                 </div>
             )}
         </div>
