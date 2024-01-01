@@ -10,7 +10,7 @@ const LoginForm = () => {
     // Array to store user credentials
     const users = [
         { username: 'user', password: 'password' },
-        { username: 'abhishek', password: 'abhi@6268' },
+        { username: 'abhishek', password: 'abhi@621' },
         // Add more users as needed
     ];
 

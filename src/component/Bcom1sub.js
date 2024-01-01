@@ -31,6 +31,9 @@ export default function Bcom1sub() {
 
             <div id="pdf" className='ms-5' > <a href="https://drive.google.com/file/d/17yajzE9nMSUL9VH89oHf6UQnyZxzxaYn/view?usp=sharing"><h3 className='mt-5'>View</h3></a></div>
             <p className='fw-bold ms-3  mt-1' >Personality Developement</p>
+
+            <div id="pdf" className='ms-5' > <a href="https://drive.google.com/file/d/1ktQMYUKpgxnBmQHewhrkilH9rh2Aj8Qs/view?usp=sharing"><h3 className='mt-5'>View</h3></a></div>
+            <p className='fw-bold ms-3  mt-1' >Finencial Account</p>
         </div>
     )
 }
